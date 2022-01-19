@@ -1,15 +1,15 @@
-package com.xworkz.Airport.DAO;
+package com.xworkz.airport.dao;
 
 public class AirportTester {
 
 	public static void main(String[] args) {
 		AirportDaoImpl airport = new AirportDaoImpl();
-		airport.InsertEntity();
-		airport.UpdateEntity();
-		airport.ReadEntity();
-		airport.ReadAllEntity();
-		airport.DeleteEntity();
-		airport.ReadAllEntity();
+		airport.insertEntity();
+		airport.updateEntity();
+		airport.readEntity();
+		airport.readAllEntity();
+		airport.deleteEntity();
+		airport.readAllEntity();
 
 
 	}

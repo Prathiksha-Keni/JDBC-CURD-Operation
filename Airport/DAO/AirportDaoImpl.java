@@ -1,4 +1,4 @@
-package com.xworkz.Airport.DAO;
+package com.xworkz.airport.dao;
 import java.sql.*;
 
 public class AirportDaoImpl implements AirportDaoInterface {
@@ -6,7 +6,7 @@ public class AirportDaoImpl implements AirportDaoInterface {
 	static String username="root";
 	static String password="Prathu@123";
 	@Override
-	public void InsertEntity() {
+	public void insertEntity() {
 		String insert1="INSERT INTO airport_details VALUES (5,'delhi','del','pnq',8,'delhi',false)";
 		Connection connection=null;
 		try {
@@ -28,7 +28,7 @@ public class AirportDaoImpl implements AirportDaoInterface {
 	}
 
 	@Override
-	public void UpdateEntity() {
+	public void updateEntity() {
 		String update="UPDATE airport_details set location='new delhi' where aid=5";
 		Connection connection=null;
 		try {
@@ -50,7 +50,7 @@ public class AirportDaoImpl implements AirportDaoInterface {
 	}
 
 	@Override
-	public void DeleteEntity() {
+	public void deleteEntity() {
 		String delete="DELETE FROM airport_details WHERE aid=5";
 		Connection connection=null;
 		try {
@@ -73,7 +73,7 @@ public class AirportDaoImpl implements AirportDaoInterface {
 	}
 
 	@Override
-	public void ReadEntity() {
+	public void readEntity() {
 		String select="SELECT * FROM airport_details WHERE aid=1;";
 		Connection connection=null;
 		try {
@@ -107,7 +107,7 @@ public class AirportDaoImpl implements AirportDaoInterface {
 	}
 
 	@Override
-	public void ReadAllEntity() {
+	public void readAllEntity() {
 		String select="SELECT * FROM airport_details;";
 		Connection connection=null;
 		try {
