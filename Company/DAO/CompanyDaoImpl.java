@@ -1,11 +1,11 @@
-package com.xworkz.Company.DAO;
+package com.xworkz.company.dao;
 import java.sql.*;
 public class CompanyDaoImpl implements CompanyDaoInterface{
 	static String url="jdbc:mysql://localhost:3306/company";
 	static String username="root";
 	static String password="Prathu@123";
 	@Override
-	public void InsertEntity() {
+	public void insertEntity() {
 		
 		String insertq1="INSERT INTO details VALUES(06,'dell','kerala',false,150,'s',5)";
 		
@@ -29,7 +29,7 @@ public class CompanyDaoImpl implements CompanyDaoInterface{
 	}
 
 	@Override
-	public void UpdateEntity() {
+	public void updateEntity() {
 		String update="UPDATE details set grade='A' where cid=06";
 		Connection connection=null;
 		try {
@@ -51,7 +51,7 @@ public class CompanyDaoImpl implements CompanyDaoInterface{
 	}
 
 	@Override
-	public void DeleteEntity() {
+	public void deleteEntity() {
 		String delete="DELETE FROM details WHERE cid=6";
 		Connection connection=null;
 		try {
@@ -74,7 +74,7 @@ public class CompanyDaoImpl implements CompanyDaoInterface{
 	}
 
 	@Override
-	public void ReadEntity() {
+	public void readEntity() {
 		String select="	SELECT * FROM details WHERE cid=2";
 		Connection connection=null;
 		try {
@@ -106,7 +106,7 @@ public class CompanyDaoImpl implements CompanyDaoInterface{
 	}
 
 	@Override
-	public void ReadAllEntity() {
+	public void readAllEntity() {
 		String selectAll="SELECT *FROM details";
 		Connection connection=null;
 		try {

@@ -1,10 +1,10 @@
-package com.xworkz.Company.DAO;
+package com.xworkz.company.dao;
 
 public interface CompanyDaoInterface {
 
-	public void InsertEntity();
-	public void UpdateEntity();
-	public void DeleteEntity();
-	public void ReadEntity();
-	public void ReadAllEntity();
+	public void insertEntity();
+	public void updateEntity();
+	public void deleteEntity();
+	public void readEntity();
+	public void readAllEntity();
 }
